@@ -36,8 +36,9 @@
         - Now, we will update our current child index and parent index by dividing 2.
          - So, we always comparing with parent element at each statement so pushing a element into a heap will take `log(n)` time.
    Here is the code...carefully understand it.
- ```
-   void push(int data)
+ 
+    ```
+    void push(int data)
     {
       v.push_back(data);
       int index = v.size()-1;
@@ -60,7 +61,7 @@
     {
         return v.size() == 1;
     }
-    ```
+  ```
 5.*Let's create a function for finding the topmost element of heap.*
  - we just have to return the first index,here first index will be `one` not `zero` because 0th index was blocked.
  Here is the code for it...
