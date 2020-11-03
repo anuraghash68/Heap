@@ -118,6 +118,7 @@
  - [x] finished `push` element to heap.
  - [x] finished `poping` element to heap.
  - [x] finished `heapify` for adjusting the element at correct position.
+ 
 7.*Here come the inside the main function code*.
 ```
 
