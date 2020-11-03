@@ -6,7 +6,7 @@
   - We will create boolean variable with name meanHeap to check what user wants at compile time a min heap or max heap
    -Then we will will creater compare function for checking what type of heap we wanted to buid.
     Here is the code part of it.
-   ```
+   ```C++
   vector<int>v;
     bool minHeap;
     bool compare(int a, int b)
@@ -25,7 +25,7 @@
  2.*Let's Create a constructor of Heap,where we pass a bool type to perform min or max heap at compile time.*
    - Setting the minHeap variable of boolean type and blocking the first index of vector because we will consider it 1 based indexing
   Here is the code part of it.
- ```
+ ```C++
  public:
     explicit Heap(bool type = true)
     {
@@ -42,7 +42,7 @@
          - So, we always comparing with parent element at each statement so pushing a element into a heap will take `log(n)` time.
    Here is the code...carefully understand it.
  
-    ```
+    ```C++
     void push(int data)
     {
       v.push_back(data);
@@ -66,7 +66,7 @@
 4.*Let's create a function for checking wether a heap is empty or not.*
   - We just have to check the vector size is 1 or not? because we had reserved the first index.
   Here is the code for it...
-  ```
+  ```C++
    bool isEmpty()
     {
         return v.size() == 1;
@@ -75,7 +75,7 @@
 5.*Let's create a function for finding the topmost element of heap.*
  - we just have to return the first index,here first index will be `one` not `zero` because 0th index was blocked.
  Here is the code for it...
- ```
+ ```C++
   int top()
     {
         return v[1];
@@ -89,7 +89,7 @@
       - then we will compare the index, left and right child value whoever is minimum(for minheap) between them we will swap them.
        - the we will again call for next index to perform heapify by recursive method.
        Here is the code for it `understant it very carefully`.
-       ```
+       ```C++
        void heapify(int i)
     {
         int left = 2*i;
@@ -120,7 +120,7 @@
  - [x] finished `heapify` for adjusting the element at correct position.
  
 7.*Here come the inside the main function code*.
-```
+```C++
 
 int main()
 {
