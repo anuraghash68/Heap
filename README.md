@@ -1,5 +1,5 @@
 # Heap Build.
-**Insertion, deletion and getMin and getMax operation in heap.**
+**Insertion, deletion and getMin and getMax operation in heap.**:+1:
 
 1.*Creating a Class with name heap.*
  - Declaring the class variable of vector<int>v as array will be used to implement the heap
