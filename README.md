@@ -28,7 +28,7 @@
         v.push_back(-1);
     }
  ```
-3.*Let's create a push function for inseting a new data into heap*.
+3.*Let's create a push function for inseting a new data into heap.*
   - We always insert a new element into the last of positon of a vector.
     - Then we will start comparing the inserted element index with parents by `i/2` where i is the children index.
       - For left childrent the index will be `2*i` and for right child `2*i+1`.
@@ -52,7 +52,7 @@
 
     }
     ```
-4.*Let's create a function for checking wether a heap is empty or not?*.
+4.*Let's create a function for checking wether a heap is empty or not.*
   - We just have to check the vector size is 1 or not? because we had reserved the first index.
   Here is the code for it...
   ```
@@ -61,14 +61,16 @@
         return v.size() == 1;
     }
     ```
-5.*Let's create a function for finding the topmost element of heap*.
+5.*Let's create a function for finding the topmost element of heap.*
  - we just have to return the first index,here first index will be `one` not `zero` because 0th index was blocked.
  Here is the code for it...
+ ```
   int top()
     {
         return v[1];
     }
-6.* Now, most important part comes, poping an element from the heap*
+ ```
+6.*Now, most important part comes, poping an element from the heap*
   - In deletion, first we swap the first element with last element then we will delete the last element by poping from vector.
     - Now we have to perform heapify opertion so that the next max or min element comes at the top.
     - We always perform heapify operation from the first index.
