@@ -95,3 +95,29 @@
         }
     }
     ```
+7.*Here come the inside the main function code*.
+```
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    Heap h(false);
+    h.push(20);
+    h.push(3);
+    h.push(6);
+    h.push(0);
+    h.push(1);
+    h.push(15);
+
+    //cout << h.top() << endl;
+    while (!h.isEmpty()){
+        cout << h.top() << endl;
+        h.pop();
+    }
+
+    return 0;
+}
+```
