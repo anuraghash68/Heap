@@ -17,7 +17,12 @@
             return a>b;
     }
   ```
- 2.* Let's Create a constructor of Heap,where we pass a bool type to perform min or max heap at compile time.*
+ - [x] finished the comparator for `min/max` heap.
+ - [ ] remained `push` element to heap.
+ - [ ] remained `poping` element to heap.
+ - [ ] remaining `heapify` for adjusting the element at correct position.
+ 
+ 2.*Let's Create a constructor of Heap,where we pass a bool type to perform min or max heap at compile time.*
    - Setting the minHeap variable of boolean type and blocking the first index of vector because we will consider it 1 based indexing
   Here is the code part of it.
  ```
@@ -53,6 +58,11 @@
 
     }
     ```
+ - [x] finished the comparator for `min/max` heap.
+ - [x] finished `push` element to heap.
+ - [ ] remained `poping` element to heap.
+ - [ ] remaining `heapify` for adjusting the element at correct position.
+ 
 4.*Let's create a function for checking wether a heap is empty or not.*
   - We just have to check the vector size is 1 or not? because we had reserved the first index.
   Here is the code for it...
@@ -97,7 +107,17 @@
             heapify(minIndex);
         }
     }
+    void pop()
+    {
+        swap(v[1], v[v.size()-1]);
+        v.pop_back();
+        heapify(1);
+    }
     ```
+ - [x] finished the comparator for `min/max` heap.
+ - [x] finished `push` element to heap.
+ - [x] finished `poping` element to heap.
+ - [x] finished `heapify` for adjusting the element at correct position.
 7.*Here come the inside the main function code*.
 ```
 
